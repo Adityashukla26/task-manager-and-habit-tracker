@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body, #__next { margin: 0; min-height: 100%; }
+body { overflow-x: hidden; color: #0f172a; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+button, input, textarea, select { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, [tabindex='-1']:focus-visible { outline: 3px solid #14b8a6; outline-offset: 3px; }
+@media (max-width: 720px) {
+  body { padding-bottom: 72px; }
+  main { min-width: 0; }
+  [data-desktop-sidebar] { display: none !important; }
+  .app-main-content { margin-left: 0 !important; }
+  .app-topbar { height: 64px !important; padding: 0 16px !important; }
+  .app-topbar h1 { font-size: 1.1rem !important; }
+  .app-topbar > div:nth-child(2) { display: none !important; }
+  .app-topbar > div:nth-child(3) { display: flex !important; }
+  .app-main-content main { padding: 20px 16px !important; }
+  .mobile-bottom-nav { position: fixed !important; left: 0; right: 0; bottom: 0; z-index: 30; display: flex !important; align-items: center; justify-content: space-around; height: 64px; padding: 0 12px; background: #fff; border-top: 1px solid #E2E8F0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  button, a, input, textarea, select { transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease; }
+  button:active { transform: scale(.98); }
+}
